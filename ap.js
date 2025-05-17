@@ -1,3 +1,15 @@
+ function getHumanChoice(num) {
+    const choice = prompt('please enter rock, paper or scissor');
+    if (choice === 'rock') {
+        return console.log('human picked rock');
+    } else if (choice === 'paper') {
+        return console.log('human picked paper');
+    } else if (choice === 'scissor') {
+        return console.log('human picked scissor');
+    } else {
+        return console.log('human picked invalid');
+    }
+ }
 function getComputerChoice(max) {
     if (Math.floor(Math.random() * max) === 0) {
         return console.log('rock');
@@ -8,15 +20,3 @@ function getComputerChoice(max) {
     }
 }
     console.log(getComputerChoice(3));
- function getHumanChoice(num) {
-    const choice = prompt('please enter rock, paper or scissor');
-    if (choice == 'rock') {
-        return console.log('human picked rock');
-    } else if (choice == 'paper') {
-        return console.log('human picked paper');
-    } else if (choice == 'scissor') {
-        return console.log('human picked scissor');
-    } else {
-        return console.log('human picked invalid');
-    }
- }
