@@ -10,6 +10,8 @@
         return console.log('human picked invalid');
     }
  }
+ console.log(getHumanChoice());
+ 
 function getComputerChoice(max) {
     if (Math.floor(Math.random() * max) === 0) {
         return console.log('rock');
