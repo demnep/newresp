@@ -1,4 +1,4 @@
- function getHumanChoice(num) {
+ function getHumanChoice() {
     const choice = prompt('please enter rock, paper or scissor');
     if (choice === 'rock') {
         return console.log('human picked rock');
