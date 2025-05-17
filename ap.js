@@ -6,5 +6,5 @@ function getComputerChoice(max) {
     } else {
         return console.log('scissor');
     }
-    console.log(getComputerChoice(3));
 }
+    console.log(getComputerChoice(3));
