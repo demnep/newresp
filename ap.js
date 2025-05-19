@@ -1,24 +1,24 @@
- function getHumanChoice() {
-    const choice = prompt('please enter rock, paper or scissor');
-    if (choice === 'rock') {
-        return console.log('human picked rock');
-    } else if (choice === 'paper') {
-        return console.log('human picked paper');
-    } else if (choice === 'scissor') {
-        return console.log('human picked scissor');
-    } else {
-        return console.log('human picked invalid');
-    }
- }
- console.log(getHumanChoice());
- 
-function getComputerChoice(max) {
-    if (Math.floor(Math.random() * max) === 0) {
-        return console.log('rock');
-    } else if (Math.floor(Math.random() * max) === 1) {
-        return console.log('paper');
-    } else {
-        return console.log('scissor');
+function getComputerChoice() {
+    let computerChoice = Math.floor(Math.random() * 3) + 1;
+    if (computerChoice == 1) {
+        return ('rock');
+    } else if(computerChoice == 2) {
+        return ('paper');
+    } else if(computerChoice == 3) {
+        return ('scissor');
     }
 }
-    console.log(getComputerChoice(3));
+console.log(getComputerChoice());
+
+function getHumanChoice() {
+    let humanChoice = prompt('Please, pick rock, paper or scissor').toLowerCase();
+    if (humanChoice == 'rock' || humanChoice == 'paper' || humanChoice == 'scissor') {
+        return humanChoice;
+    } else {
+        return getHumanChoice();
+    }
+}
+console.log(getHumanChoice());
+
+humanScore = 0;
+computerScore = 0;
