@@ -42,6 +42,16 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 }
-console.log(`Final Results: Human ${humanScore} - ${computerScore} Computer.`)
+// final score of the game
+function finalScore() {
+    if (humanScore == computerScore) {
+     return `It\'s draw game! Human ${humanScore} - ${computerScore} Computer.`;
+    } else if (humanScore > computerScore) {
+        return `You win the game! Human ${humanScore} - ${computerScore} Computer.`;
+    } else if (humanScore < computerScore) {
+        return `You lose the game! Human ${humanScore} - ${computerScore} Computer.`;
+    }
+}
+console.log(finalScore());
 }
 playGame();
